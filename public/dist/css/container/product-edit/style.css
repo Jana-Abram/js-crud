@@ -1,0 +1,50 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 32px;
+}
+.form__title {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #ddd;
+}
+.form__content {
+  display: grid;
+  gap: 24px;
+}
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form__label {
+  font-size: 14px;
+}
+.form__input {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.form__button {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+.form__colums {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.colums_button {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */

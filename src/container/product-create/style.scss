@@ -1,19 +1,19 @@
 @use '../../lib/service.scss' as s;
 
 .form {
-    display: flex;
+	display: flex;
 	flex-direction: column;
 	padding: s.space(4);
 	gap: s.space(8);
 
-    &__title {
-		font-size: 20px;
+	&__title {
+		font-size: 18px;
 		font-weight: bold;
-		color: blue;
 		padding-bottom: s.space(1);
+		border-bottom: 1px solid s.color('light');
 	}
 
-	&__content {
+	&__content{
 		display: grid;
 		gap: s.space(6);
 	}
@@ -36,8 +36,14 @@
 	&__button {
 		border: 1px solid s.color('light');
 		padding: s.space(2);
-		background-color: blue;
-		color: white;
-		border-radius: 10px;
+		border-radius: 20px;
+		background-color: s.color('button');
+		color: s.color('words_button');
+	}
+
+	&__colums {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: s.space(4);
 	}
 }
